@@ -1,6 +1,6 @@
 FROM library/openjdk:8-jdk-alpine
 
-RUN apk add --update --no-cache bash shadow docker maven && \
+RUN apk add --update --no-cache bash shadow git docker maven && \
     useradd -d /home/jenkins -G docker jenkins && \
     mkdir -p /home/jenkins && \
     chown jenkins /home/jenkins
